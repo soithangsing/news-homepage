@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.menu ul{
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+@media only screen and (max-width: 375px) {
+    
+  }
+
+  @media only screen and (max-width: 1440px) {
+
+  }
