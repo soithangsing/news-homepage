@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
     font-family: 'Inter', sans-serif;
+    padding-top: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    display: grid;
+    gap: 2.5rem;
 }
 
 .header {
@@ -25,6 +34,10 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+.menu {
+    text-align: right;
+}
 
 .menu ul{
     list-style-type: none;
@@ -50,6 +63,41 @@ body {
 
 .new-box {
     grid-row: span 2;
+    background-color: var(--very-dark-blue);
+    padding: 1rem;
+}
+
+.new-box-title > h2{
+    font-size: 2rem;
+    color: var(--soft-orange);
+}
+
+.new-box-title {
+    padding-bottom: 1rem;
+}
+
+.new-box-article h4 {
+    font-size: 1.2rem;
+    color: var(--off-white);
+}
+
+.new-box-article p {
+    color: var(--dark-grayish-blue);
+}
+
+.new-box-article p {
+    line-height: 28px;
+}
+
+#new-article-1 {
+    border-bottom: 1px solid var(--dark-grayish-blue);
+}
+#new-article-2 p {
+    padding-bottom: 30px;
+}
+
+#new-article-2 {
+    border-bottom: 1px solid var(--dark-grayish-blue);
 }
 
 .headline-img > img {
@@ -57,31 +105,57 @@ body {
     width: 100%;
 }
 
+.headline-title h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.headline-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .new-box-article-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 .headline-grid-container {
+    margin-top: 2.2rem;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.headline-content-paragraph p{
+    color: var(--dark-grayish-blue);
 }
 
 .news-article {
-    /* display: grid;
-    grid-auto-flow: column;
+    /* display: grid; 
+    grid-auto-flow: column; */
     /* height: 150px; 
     grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
 }
 .news-article-image img {
-    height: 100px;
-     width: auto; 
+     width: 150px; 
 }
 
 .news-article-content {
-    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-number {
+    font-size: 2rem;
+}
+
+.article-title {
+    font-weight: 800;
 }
 
 @media only screen and (max-width: 375px) {
